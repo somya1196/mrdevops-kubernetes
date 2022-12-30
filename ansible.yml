@@ -1,0 +1,7 @@
+- hosts: 172.31.8.120   #pv. ip of k8s server
+  become: true
+  tasks: 
+    - name: create new deployment
+      command: kubectl apply -f /home/ubuntu/deployment.yml
+    - name:
+      command: kubectl apply -f /home/ubuntu/service.yml

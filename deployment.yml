@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata: 
+     name: mrdevops
+spec:
+    replicas: 2
+    selector:
+        matchLables:
+            app: mrdevops
+    template:
+        metadata: 
+          labels: 
+             app: mrdevops
+        spec: 
+          containers:
+             - name: mrdevops
+               image: somya1196/pipeline-demo
+               imagePullPolicy: Always
+               ports:
+                   - containerPort: 80
