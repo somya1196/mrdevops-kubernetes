@@ -1,7 +1,7 @@
 - hosts: 172.31.41.155   #pv. ip of k8s server
-  become: true
+  become: yes
   tasks: 
     - name: create new deployment
       command: kubectl apply -f /home/ubuntu/deployment.yml
-    - name:
+    - name: create new service
       command: kubectl apply -f /home/ubuntu/service.yml
