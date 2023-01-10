@@ -14,7 +14,7 @@ spec:
         spec: 
           containers:
              - name: mrdevops
-               image: somya1196/mrdevops:2.0
+               image: somya1196/mrdevops
                imagePullPolicy: Always
                ports:
                    - containerPort: 80
