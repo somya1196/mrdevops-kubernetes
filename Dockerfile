@@ -1,7 +1,5 @@
 FROM ubuntu:latest
-RUN yum install httpd -y \
-zip\
-unzip
+RUN yum install httpd -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/pages254/photogenic.zip /var/www/html
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
