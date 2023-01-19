@@ -1,4 +1,4 @@
-- hosts: 172.31.41.155   #pv. ip of k8s server
+- hosts: 172.31.34.160   #pv. ip of k8s server
   become: yes
   tasks: 
     - name: create new deployment
